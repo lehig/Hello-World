@@ -1,0 +1,88 @@
+Test file:
+
+TEST 1 - PUBLIC IP
+
+THE IP USED WAS THE ONE FROM WHATISMYIP.COM 
+
+ip: 157.201.98.1
+file location: "C:\Users\Altron\Desktop\sender\filetosend.txt"
+
+--- FAILED ---
+
+TEST 2 - WIRELESS LAN IPV4
+
+THE IP IS FROM THE ipconfig COMMAND IN THE TERMINAL UNDER THE 
+"Wireless LAN adapter Wi-Fi"
+
+ip: 10.15.9.121
+file location: "C:\Users\Altron\Desktop\sender\filetosend.txt"
+receiver name: test1
+
+THE FILE LOCATION WAS MADE AND A CONNECTION WAS MADE. 
+
+THE TEXT WITHIN THE FILE WAS NOT SENT. 
+
+--- FAILED --- 
+
+TEST 3 - CONFIGURE RECEIVER DIRECTORY
+
+TESTED THE RECEIVER RENAMING OF THE FILE. 
+
+ip: 10.15.9.121
+file location: "C:\Users\Altron\Desktop\sender\filetosend.txt"
+receiver name: test1.txt
+
+AGAIN THE FILE LOCATION WAS MADE AND THE CONNECTION WAS MADE. 
+
+THE TEXT WITHIN THE FILE DID NOT SEND. 
+
+--- FAILED --- 
+
+TEST 4 - CONFIGURE SENDER DIRECTORY
+
+TESTED THE SENDER LOCATION
+
+ip: 10.15.9.121
+file location: filetosend.txt
+receiver name: test4.txt
+
+FILE LOCATION WAS MADE. 
+CONNECTION WAS MADE. 
+FILE CONTENTS WERE SENT. 
+
+--- SUCCESS --- 
+
+TEST 5 - DIFFERENT FILE LOCATION
+
+ip: 10.15.9.121
+file location: 'C:\Users\Altron\Desktop\filetosend.txt'
+receiver name: test5.txt
+
+FILE LOCATION WAS MADE
+CONNECTION WAS MADE. 
+FILE CONTENTS WERE NOT TRANSFERRED. 
+ERROR: "Error: The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\Altron\Desktop\sender\'C:\Users\Altron\Desktop\filetosend.txt''"
+
+--- FAILED --- 
+
+TEST 6 - TESTING FILE LOCATION
+
+ip: 10.15.9.121
+file location: C:\Users\Altron\Desktop\filetosend.txt
+receiver name: test6.txt
+
+FILE LOCATION WAS MADE. 
+CONNECTION WAS MADE. 
+FILE CONTENTS WERE TRANSFERRED. 
+
+NO ERRORS. 
+
+--- SUCCESS --- 
+
+
+
+
+
+
+
+

@@ -12,7 +12,7 @@ public class Receiver : Command{
 
     public Receiver() {
         _ipAddress = "IP Address";
-        _saveLocation = "Save Location";
+        _saveLocation = "file_received";
         _fileData = null;
 
     }
@@ -89,6 +89,8 @@ public class Receiver : Command{
     
     public override void Run() {
         Console.WriteLine("Running Program...");
+        Console.WriteLine("What would you like to call the file once received: ");
+        _saveLocation = Console.ReadLine();
         ReceiveFile();
 
     }
