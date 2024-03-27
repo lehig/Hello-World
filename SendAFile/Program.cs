@@ -18,8 +18,13 @@ class Program{
         commmands.Add("send", sender);
         commmands.Add("receive", receiver);
         
-        // Check the first argument to determine what action to take
-        string action = args[0].ToLower(); // Convert to lowercase for case-insensitive comparison
+        Console.WriteLine("This is a program to send files to other people that are waiting to receive them.\n" +
+                          "\nList of actions:\n" +
+                          "- send (type in 'send')\n" +
+                          "- receive (type in 'receive')\n" +
+                          "\nWhat would you like to do: ");
+        
+        string action = Console.ReadLine().ToLower(); // Convert to lowercase for case-insensitive comparison
         
         // taking the action from the argument and putting it through the dictionary and running the object
         try {
