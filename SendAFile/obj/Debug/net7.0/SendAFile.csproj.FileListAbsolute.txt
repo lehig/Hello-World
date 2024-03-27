@@ -1,0 +1,15 @@
+C:\Users\Altron\Documents\Hello-World\SendAFile\bin\Debug\net7.0\SendAFile.exe
+C:\Users\Altron\Documents\Hello-World\SendAFile\bin\Debug\net7.0\SendAFile.deps.json
+C:\Users\Altron\Documents\Hello-World\SendAFile\bin\Debug\net7.0\SendAFile.runtimeconfig.json
+C:\Users\Altron\Documents\Hello-World\SendAFile\bin\Debug\net7.0\SendAFile.dll
+C:\Users\Altron\Documents\Hello-World\SendAFile\bin\Debug\net7.0\SendAFile.pdb
+C:\Users\Altron\Documents\Hello-World\SendAFile\obj\Debug\net7.0\SendAFile.csproj.AssemblyReference.cache
+C:\Users\Altron\Documents\Hello-World\SendAFile\obj\Debug\net7.0\SendAFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Altron\Documents\Hello-World\SendAFile\obj\Debug\net7.0\SendAFile.AssemblyInfoInputs.cache
+C:\Users\Altron\Documents\Hello-World\SendAFile\obj\Debug\net7.0\SendAFile.AssemblyInfo.cs
+C:\Users\Altron\Documents\Hello-World\SendAFile\obj\Debug\net7.0\SendAFile.csproj.CoreCompileInputs.cache
+C:\Users\Altron\Documents\Hello-World\SendAFile\obj\Debug\net7.0\SendAFile.dll
+C:\Users\Altron\Documents\Hello-World\SendAFile\obj\Debug\net7.0\refint\SendAFile.dll
+C:\Users\Altron\Documents\Hello-World\SendAFile\obj\Debug\net7.0\SendAFile.pdb
+C:\Users\Altron\Documents\Hello-World\SendAFile\obj\Debug\net7.0\SendAFile.genruntimeconfig.cache
+C:\Users\Altron\Documents\Hello-World\SendAFile\obj\Debug\net7.0\ref\SendAFile.dll
