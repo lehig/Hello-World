@@ -4,47 +4,27 @@ using System.Net.Sockets;
 namespace SendAFile; 
 
 public class Receiver : Command{
-    private string _ipAddress;
+    private string _ipAddress { get; set; }
 
-    private string _saveLocation;
+    private string _saveLocation { get; set; }
 
-    private byte[] _fileData;
+    private byte[] _fileData { get; set; }
+
+    private int _fileSize { get; set; }
 
     public Receiver() {
         _ipAddress = "IP Address";
         _saveLocation = "file_received";
         _fileData = null;
+        _fileSize = 0;
 
     }
 
-    public Receiver(string ipAddress, string saveLocation, byte[] fileData) {
+    public Receiver(string ipAddress, string saveLocation, byte[] fileData, int fileSize = 0) {
         _ipAddress = ipAddress;
         _saveLocation = saveLocation;
         _fileData = fileData;
-    }
-
-    public string GetipAddress() {
-        return _ipAddress;
-    }
-
-    public void SetipAddress(string ipAddress) {
-        _ipAddress = ipAddress;
-    }
-
-    public string GetLocation() {
-        return _saveLocation;
-    }
-
-    public void SetLocation(string location) {
-        _saveLocation = location;
-    }
-
-    public byte[] GetFileData() {
-        return _fileData;
-    }
-
-    public void SetFileData(byte[] fileData) {
-        _fileData = fileData;
+        _fileSize = fileSize;
     }
 
     public void ReceiveFile() {
@@ -67,11 +47,11 @@ public class Receiver : Command{
             // receive the file size from the sender
             byte[] fileSizeBytes = new byte[4];
             stream.Read(fileSizeBytes, 0, 4);
-            int fileSize = BitConverter.ToInt32(fileSizeBytes, 0);
+            _fileSize = BitConverter.ToInt32(fileSizeBytes, 0);
 
             // receive the file data from the sender
-            byte[] fileData = new byte[fileSize];
-            int bytesRead = stream.Read(fileData, 0, fileSize);
+            byte[] fileData = new byte[_fileSize];
+            int bytesRead = stream.Read(fileData, 0, _fileSize);
 
             // write the received file data to disk
             File.WriteAllBytes(_saveLocation, fileData);

@@ -79,6 +79,49 @@ NO ERRORS.
 
 --- SUCCESS --- 
 
+============================================ TWO COMPUTERS IN DIFFERENT REGIONS ===================================
+
+TEST 7 - TWO COMPUTER TESTING
+
+ip: 172.20.10.7
+file location: C:\Users\Altron\Desktop\filetosend.txt
+
+FILE LOCATION WAS NOT MADE. 
+CONNECTION WAS NOT MADE. 
+FILE CONTENTS WERE NOT TRANSFERRED. 
+
+ERROR: "Error: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. [::ffff:172.20.10.7]:8888"
+
+--- FAILED --- 
+
+
+TEST 8 - IPV6 
+
+ipv6: 2600:382:1522:9f54:beaa:16df:4641:7283
+file location: C:\Users\Altron\Desktop\filetosend.txt
+
+FILE LOCATION WAS NOT MADE. 
+CONNECTION WAS NOT MADE. 
+SOCKET OPERATION WAS UNREACHABLE. 
+
+ERROR: "A socket operation was attempted to an unreachable network. [2600:382:1522:9f54:beaa:16df:4641:7283]:8888"
+
+--- FAILED --- 
+
+TEST 9 - PUBLIC IP
+
+public ipv4: 2600:387:15:2a18::4
+file location: C:\Users\Altron\Desktop\filetosend.txt
+
+FILE LOCATION WAS NOT MADE. 
+SOCKET OPERATION WAS UNREACHABLE.
+
+ERROR: "A socket operation was attempted to an unreachable network. [2600:387:15:2a18::4]:8888"
+
+--- FAILED ---
+
+
+
 
 
 
